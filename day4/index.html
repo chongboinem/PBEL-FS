@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name>
+    <title>document</title>
+
+    <style>
+        h1{
+            color: #c4f4c8;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container{
+            border: 1px;
+            width:60%;
+            color:rgb(81, 0, 0);
+            display:flex;
+            flex-wrap:wrap;
+            /* flex-direction: row; */
+            justify-content: center;
+            align-items: center;
+            margin:auto;
+            border-radius: 1px;
+            margin-top: 50px;
+            box-shadow: #F6C2F3 0px 0px 0px 3px, #CDABEB 0px 0px 0px 6px, #C7CAFF 0px 0px 0px 9px, #F6CA94 0px 0px 0px 12px,#F09EA7 0px 0px 0px 15px;
+        }
+
+        .child{
+            border: 1px;
+            background-color:rgb(255, 255, 255);
+            border-radius: 20px;
+            width:150px;
+            height:150px;
+            margin: 10px;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            text-align: center;
+            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">FLEX BOX</h1>
+
+    <div id="container">
+        <div class="child">box 1</div>
+        <div class="child">box 2</div>
+        <div class="child">box 3</div>
+        <div class="child">box 4</div>
+        <div class="child">box 5</div>
+        <div class="child">box 6</div>
+        <div class="child">box 7</div>
+        <div class="child">box 8</div>
+        <div class="child">box 9</div>
+        <div class="child">box 10</div>
+
+    </div>
+    <div class="container">
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="container">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
