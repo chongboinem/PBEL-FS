@@ -1,0 +1,183 @@
+/* Translate transition is a type of CSS transition that animates the movement of an element from one position to another. It is typically used to smoothly change an element's position over a specified duration when triggered by a user interaction or a change in CSS properties. */
+
+.parent {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(214, 214, 255);
+    border: 2px solif rgb(114, 131, 114);
+    transition: transform 1s ease-in-out;
+}
+
+.parent:hover {
+    transform: translateX(200px);
+}
+
+/* animation in css is a versatile way to create complex animal with multiple stages. It allows you to define the animation behavior, keyframes, and timing using the @keyframes rule and the animation property.*/
+
+/* Keyframes are the foundation of animations in CSS. They define the specific stages of an animation using percentage values (0%, 50%, 100%) or specific names (from, to). Keyframes describe how properties change over the duration of the animation. */
+
+@keyframes slide {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateX(200px);
+    }
+
+    80% {
+        transform: translateY(200px);
+    }
+
+    100% {
+        transform: translateX(500px);
+    }
+}
+
+.parent1 {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(156, 156, 192);
+    border: 2px solif rgb(131, 182, 131);
+    transition: transform 1s ease-in-out;
+    animation: slide 3s infinite alternate;
+    /* slide is the keyword given above in @keyframes*/
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(4);
+    }
+
+    50% {
+        transform: scale(3);
+    }
+
+    80% {
+        transform: scale(6);
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
+
+.parent2 {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(119, 52, 96);
+    border: 2px solif rgb(131, 182, 131);
+    transition: transform 1s ease-in-out;
+    animation: scale 3s infinite alternate;
+    /* scale is the keyword given above in @keyframes*/
+}
+
+/* ROTATE */
+.parent3 {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(195, 207, 255);
+    border: 2px solif rgb(102, 89, 162);
+    transition: transform 5s ease-in-out;
+}
+
+.parent3:hover {
+    transform: rotate(360deg);
+}
+
+.parent4 {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(145, 32, 32);
+    border: 2px solif rgb(70, 119, 159);
+    transition: transform 1s ease-in-out;
+    animation: slide 3s infinite alternate;
+    /* slide is the keyword given above in @keyframes*/
+}
+
+.parent4:hover {
+    transform: translate(300px, 600px)
+}
+
+@keyframes text-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    animation-name: text-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+#parent5 {
+    border: 1px solid rgb(255, 194, 217);
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+#parent5>div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(219, 220, 255);
+    background-color: rgb(255, 254, 205);
+
+}
+
+@media screen and (max-width: 1200px) {
+    #parent5 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(255, 203, 233);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p {
+    color: rgb(118, 10, 10);
+}
+
+@media screen and (max-width: 500px) {
+    #parent5 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    button {
+        background-color: rgb(53, 29, 151);
+        color: white;
+    }
+
+    p {
+        color: rgb(23, 123, 17);
+    }
+}
