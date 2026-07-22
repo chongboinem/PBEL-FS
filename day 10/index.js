@@ -19,7 +19,7 @@
 //         output += str[i]; 
 //     }
 
-//     console.log(output);
+//     console.log(output);s
 // }
 
 let num=10;
